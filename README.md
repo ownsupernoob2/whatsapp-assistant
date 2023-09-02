@@ -46,7 +46,7 @@ The application will generate a QR code for WhatsApp Web authentication. Scan th
 
 The AI Assistant can respond to text messages that begin with a "!". It uses the OpenAI GPT-3 model to generate responses based on the chat history.
 
-Voice messages are supported. When a voice message is received, the assistant will transcribe it and respond only if it begins with "Hey GPT" (requires Picovoice API key).
+Voice messages are supported. When a voice message is received, the assistant will transcribe it and respond only if it begins with "GPT" (requires Picovoice API key).
 
 ## Upcomings
 
