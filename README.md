@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# WhatsApp AI Assistant
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+WhatsApp AI Assistant is a Node.js application that uses WhatsApp Web and various APIs to provide AI-driven responses to messages, handle voice messages, and perform other functions.
 
-## Available Scripts
+## Prerequisites
 
-In the project directory, you can run:
+Before you can run the application, you'll need to obtain API keys for the following services:
 
-### `npm start`
+- [OpenAI API Key](https://beta.openai.com/signup/): You'll need to sign up for an OpenAI account and get an API key. The application uses OpenAI's GPT-3 model for natural language processing.
+- [Picovoice API Key](https://picovoice.ai/): If you intend to use voice message processing, you can sign up for a Picovoice account to obtain the necessary API key.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone this repository to your local machine:
 
-### `npm test`
+   ```
+   bash
+   git clone https://github.com/your-username/whatsapp-ai-assistant.git
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   cd whatsapp-ai-assistant
+   ```
+   Install the required Node.js dependencies:
+   
+```npm install```
 
-### `npm run build`
+## Configuration
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Rename the a .env-example file to .env in the root directory of the project.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Add your API keys to the .env file as follows:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+OPENAI_API_KEY=your_openai_api_key
+PICOVOICE_API_KEY=your_picovoice_api_key (only if you intend to use voice message feature)
+```
 
-### `npm run eject`
+## Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To start the WhatsApp AI Assistant, run the following command in the root of the project directory:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```node app```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The application will generate a QR code for WhatsApp Web authentication. Scan the QR code using your WhatsApp mobile app to authenticate.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Functionality
 
-## Learn More
+The AI Assistant can respond to text messages that begin with a "!". It uses the OpenAI GPT-3 model to generate responses based on the chat history.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Voice messages are supported. When a voice message is received, the assistant will transcribe it and respond only if it begins with "Hey GPT" (requires Picovoice API key).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Upcomings
 
-### Code Splitting
++ Interegrate a meme generator *(see [Blimp Projects](https://github.com/ownsupernoob2/Blimp-projects))*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
++ Create a image generator using DALL-E 
 
-### Analyzing the Bundle Size
++ Add commands to set your own OPENAI (and other) key (they aren't free)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
++ Add general commands for example "@help"
 
-### Making a Progressive Web App
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
