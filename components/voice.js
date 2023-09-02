@@ -27,7 +27,7 @@ module.exports = {
     try {
       console.log("Voice Clip Received");
 
-      var audioPath = `audio/voice_message_${Math.floor(
+      var audioPath = `voice_message_${Math.floor(
         Math.random() * 1000000
       )}.ogg`;
 
@@ -38,8 +38,8 @@ module.exports = {
 
       const result = await handle.processFile(audioPath);
       console.log(`Transcription: ${result.transcript}`);
-      
-      await msg.reply('I think you said "' + result.transcript + '"');
+        await msg.reply('I think you said "' + result.transcript + '"');
+
      const GPT = result.transcript.split(" ")[0]
       if (GPT === "GPT") {
         console.log("Processing user's request...");
