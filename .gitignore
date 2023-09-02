@@ -7,3 +7,4 @@
 
 # misc
 .env
+package-lock.json
