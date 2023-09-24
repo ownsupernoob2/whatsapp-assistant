@@ -38,7 +38,7 @@ PICOVOICE_API_KEY=your_picovoice_api_key (only if you intend to use voice messag
 
 To start the WhatsApp AI Assistant, run the following command in the root of the project directory:
 
-```node app```
+```npm brr```
 
 The application will generate a QR code for WhatsApp Web authentication. Scan the QR code using your WhatsApp mobile app to authenticate.
 
@@ -52,11 +52,11 @@ Voice messages are supported. When a voice message is received, the assistant wi
 
 + Interegrate a meme generator *(see [Blimp Projects](https://github.com/ownsupernoob2/Blimp-projects))*
 
-+ Create a image generator using DALL-E 
++ Create a image generator using DALL-E or any other image generator
 
-+ Add commands to set your own OPENAI (and other) key (they aren't free)
++ ~~Add commands to set your own OPENAI (and other) key (they aren't free)~~
 
-+ Add general commands for example "@help"
++ ~~Add general commands for example "@help~~
 
 ## License
 
