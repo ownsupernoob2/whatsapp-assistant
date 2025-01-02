@@ -49,9 +49,9 @@ Voice messages are supported. When a voice message is received, the assistant wi
 
 ## Upcomings
 
-+ Interegrate a meme generator *(see [Blimp Projects](https://github.com/ownsupernoob2/Blimp-projects))*
++ Interegrate a meme generator 
 
-+ Create a image generator using DALL-E or any other image generator
++ Create an image generator using DALL-E or any other image generator
 
 + ~~Add commands to set your own OPENAI (and other) key (they aren't free)~~
 
