@@ -14,9 +14,9 @@ Before you can run the application, you'll need to obtain API keys for the follo
 1. Clone this repository to your local machine:
 
    ```
-   git clone https://github.com/your-username/whatsapp-ai-assistant.git
+   git clone https://github.com/ownsupernoob2/whatsapp-assistant.git
 
-   cd whatsapp-ai-assistant
+   cd whatsapp-assistant
    ```
    Install the required Node.js dependencies:
    
