@@ -20,8 +20,6 @@ module.exports = {
     const userId = contact.id._serialized; // Unique identifier for the user
     const chatId = chat.id._serialized; // Unique identifier for the chat
 
-    // Determine if it's a group chat or not
-
     // Use the chatId for group chats, and userId for individual chats
 
     if(userKeys[chatKey] === null) {
